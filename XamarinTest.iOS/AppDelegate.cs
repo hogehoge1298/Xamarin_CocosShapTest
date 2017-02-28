@@ -21,6 +21,10 @@ namespace XamarinTest.iOS
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
+            var viewController = new MainView();
+
+            Window.RootViewController = viewController;
+
             // If you have defined a root view controller, set it here:
             // Window.RootViewController = myViewController;
 

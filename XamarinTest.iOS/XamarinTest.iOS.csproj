@@ -86,16 +86,46 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="MainView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Content Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="box2d, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\box2d.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CocosSharp, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\Lidgren.Network.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinTest\XamarinTest.csproj">
+      <Project>{d06c1da2-605d-43df-b89f-f89b368a92ad}</Project>
+      <Name>XamarinTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
